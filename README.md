@@ -46,7 +46,9 @@ schematool -initSchema -dbType mysql --verbose
     row format delimited fields terminated by ','<br>
     stored as  textfile;  存储不压缩，另外的格式压缩<br>
 
-
+6) alter table tb drop partion (dt='',dev='') 删除分区<br>
+7) alter table tb rename to tb_new  表重命名 <br>
+8) alter table tb  change a a1;  修改字段<br>
 
 
 
