@@ -5,7 +5,8 @@
 
 export HIVE_HOME=/home/hadoop/hive
 export PATH=$PATH:$HIVE_HOME/bin
-hive-site.xml 配置
+hive-site.xml 配置<br>
+<!--
 <property>
 <name>javax.jdo.option.ConnectionURL</name>
 <value>jdbc:mysql://weekend07:3306/hive?createDatabaseIfNotExist=true</value>
@@ -22,8 +23,8 @@ hive-site.xml 配置
 <name>javax.jdo.option.ConnectionPassword</name>
 <value>123</value>
 </property>
-
-元数据初始
+-->
+元数据初始化<br>
 schematool -initSchema -dbType mysql --verbose
 
 
