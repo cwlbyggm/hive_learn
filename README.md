@@ -3,8 +3,8 @@
 <h3>1、配置 </h3><br>
 环境变量
 
-export HIVE_HOME=/home/hadoop/hive
-export PATH=$PATH:$HIVE_HOME/bin
+export HIVE_HOME=/home/hadoop/hive<br>
+export PATH=$PATH:$HIVE_HOME/bin<br>
 hive-site.xml 配置<br>
 <!--
 <property>
