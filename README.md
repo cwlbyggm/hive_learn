@@ -33,6 +33,7 @@ schematool -initSchema -dbType mysql --verbose
 1）hive  -f  hive.sql 批量执行sql<br>
 2) hive# !PWD   当前路径<br>
 3）load  data   local inpath '/opt/part.txt'  into table part_table partion(dt='20190411',dep='red');  装载数据<br>
+3）load  data   local inpath '/opt/part.txt'  overwriteinto table part_table partion(dt='20190411',dep='red');  装载数据<br>
 
 
 
