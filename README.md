@@ -33,3 +33,10 @@ schematool -initSchema -dbType mysql --verbose
 1）hive  -f  hive.sql 批量执行sql<br>
 2) hive# !PWD   当前路径
 3）
+
+
+
+
+
+<h3>3、sql 注意事项</h3><br>
+1）分区字段不能出现在建表字段，分区sql 接在建表sql后面<br>
