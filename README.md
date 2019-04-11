@@ -50,6 +50,8 @@ schematool -initSchema -dbType mysql --verbose
 7) alter table tb rename to tb_new  表重命名 <br>
 8) alter table tb  change a a1;  修改字段<br>
 
+9） alter  table tb  add columns(test_columns string)  添加字段 <br>
+
 
 
 <h3>3、sql 注意事项</h3><br>
