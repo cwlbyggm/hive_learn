@@ -36,7 +36,15 @@ schematool -initSchema -dbType mysql --verbose
 3）load  data   local inpath '/opt/part.txt'  overwriteinto table part_table partion(dt='20190411',dep='red');  装载数据<br>
 4) select * from tb  where dt='20190411'; 分区查询<br>
 5） show partion tb ; 查看分区<br>
-6）                                                                      <br>
+6）   create  table hive_2019   建表
+ (  name  string ,<br>
+    salary  float,<br><br>
+    gender string,<br>
+    level string   <br>
+    )<br>
+    patitrioned by (dt string,dev string)<br>
+    row format delimited fields terminated by ','<br>
+    stored as  textfile;  存储不压缩，另外的格式压缩<br>
 
 
 
