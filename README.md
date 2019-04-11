@@ -51,7 +51,7 @@ schematool -initSchema -dbType mysql --verbose
 8) alter table tb  change a a1;  修改字段<br>
 
 9） alter  table tb  add columns(test_columns string)  添加字段 <br>
-10) select  case when 1<salary<5000 then 'L1' when 5000<=salary<10000 then 'L2' when 10000<=salary then 'L4' else 'L0' end from tb; <br>
+10) select name ,salary, case when salary<5000 then 'L1' when 5000<=salary and salary <10000 then 'L2' when 10000<=salary then 'L4' else 'L0' end as tb_new  from tb; <br>
 
 
 <h3>3、sql 注意事项</h3><br>
